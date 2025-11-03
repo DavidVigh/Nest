@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { motion, AnimatePresence, useAnimation, useTime, useTransform, hover } from "framer-motion";
 import { LinkAnimations } from "../motion/variants";
-import { FaAngleRight } from '@react-icons/all-files/fa/FaAngleRight';
+import { FaAngleRight } from 'react-icons/fa';
 import { style } from "framer-motion/client";
 
 
