@@ -1,11 +1,11 @@
 "use client";
-import { motion, scale } from 'framer-motion';
+import { delay, motion, scale } from 'framer-motion';
 import { BsPersonFill } from 'react-icons/bs';
 
 export default function TeamIcons() {
     const container = {
         hidden: { scale: 0, opacity: 1 },
-        visible: { scale: 1, opacity: 1, transition: { ease: "easeInOut", duration: 0.3 } },
+        visible: { scale: 1, opacity: 1, transition: { ease: "easeInOut", duration: 0.3, delay: 1.3 } },
     } as const;
 
     // start overlapped at center (x:0), then animate outward to the left
@@ -17,7 +17,7 @@ export default function TeamIcons() {
             x: 20,
             y: 0,
             rotate: 10,
-            transition: { ease: "easeInOut", duration: 0.3, delay: 0.3 },
+            transition: { ease: "easeInOut", duration: 0.3, delay: 1.6 },
         },
     } as const;
 
@@ -27,7 +27,7 @@ export default function TeamIcons() {
             opacity: 1,
             x: 0,
             rotate: 0,
-            transition: { ease: "easeInOut", duration: 0.3, delay: 0.1, },
+            transition: { ease: "easeInOut", duration: 0.3, delay: 1.5, },
         },
         // appear first
     } as const;
@@ -41,7 +41,7 @@ export default function TeamIcons() {
             x: -20,
             y: 0,
             rotate: -10,
-            transition: { ease: "easeInOut", duration: 0.3, delay: 0.3 },
+            transition: { ease: "easeInOut", duration: 0.3, delay: 1.6 },
         },
 
     } as const;
