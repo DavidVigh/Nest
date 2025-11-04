@@ -58,14 +58,14 @@ export default function Header() {
             <div className="relative z-10 flex h-full items-center p-4 flex-col justify-center space-y-10 text-center">
                 <h1 className="text-8xl font-bold">Nest</h1>
                 <h2 className="text-2xl italic font-extralight">"Your second home awaits."</h2>
-                <div className="mt-2 flex items-center justify-center">
+                <div className="mt-2 flex flex-col sm:flex-row gap-4 sm:gap-0 items-center justify-center">
                     <motion.a
                         variants={LinkAnimations}
                         initial="rest"
                         whileHover="hover"
                         onHoverStart={handleHoverStart}
                         onHoverEnd={handleHoverEnd}
-                        className="flex items-center justify-center bg-linear-to-br from-orange-500 via-purple-500 to-cyan-500 text-white font-semibold py-4 px-8 rounded-xl mr-4 text-xl"
+                        className="flex items-center justify-center bg-linear-to-br from-[#a25634] to-[#94271d] text-white font-semibold py-4 px-8 rounded-xl mr-4 text-xl"
                         href="/menu"
                     >
                         Explore Menu
