@@ -4,6 +4,7 @@ import OfferCard from "./OfferCard";
 import { FaCoffee } from "react-icons/fa";
 import { BsCake2Fill } from "react-icons/bs";
 import { GiKnifeFork } from "react-icons/gi";
+import { pageTitle } from "../tailwind/variables";
 
 const offers = [
   {
@@ -42,7 +43,7 @@ export default function Offer() {
   return (
     <section className="flex items-center flex-col justify-between bg-[#cdbbbd]">
       <div className="flex flex-col items-center justify-center mt-20 mb-15 px-4 text-center">
-        <h2 className="text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-l from-[#e06e64] to-[#be7343]">
+        <h2 className={pageTitle("4xl")}>
           What We Offer
         </h2>
         <p className="text-md mt-1 max-w-xl text-[#3d2d2f]">Experience the perfect blend of comfort, quality, and taste</p>
