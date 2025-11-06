@@ -3,13 +3,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { CardAnimation } from "../motion/variants";
 import { cardBg } from "../tailwind/variables";
-
-type OfferCardProps = {
-  index: number;
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-};
+import { OfferCardProps } from "../types";
 
 export default function OfferCard({
   index,
