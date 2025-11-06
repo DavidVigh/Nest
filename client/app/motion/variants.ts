@@ -1,10 +1,8 @@
-import { easeInOut } from "framer-motion";
-import { tr } from "framer-motion/client";
-
 export const CardAnimation = {
     initial: {
         opacity: 0,
-        y: 100
+        y: 100,
+        boxShadow: "0px 0px 0px rgba(0, 0, 0, 0)",
     },
     animate: (index: number) => ({
         opacity: 1,
@@ -15,10 +13,10 @@ export const CardAnimation = {
     }),
     hover: {
         scale: 1.1,
-        animate: {
-            type: "spring" as const,
-            stiffness: 500,
-            damping: 15,
+        boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)",
+        transition: {
+            scale: { type: "spring" as const, stiffness: 450, damping: 25 },
+            boxShadow: { ease: "easeInOut" as const, duration: 0.1 }
         }
     }
 };
