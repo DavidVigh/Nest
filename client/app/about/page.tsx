@@ -53,7 +53,7 @@ export default function About() {
               <motion.h3
                 ref={headingRef}
                 viewport={{ once: true }}
-                className={pageTitle("5xl") + " " + pageTitle("6xl", "md")}
+                className={pageTitle("6xl") + " " + pageTitle("6xl", "md")}
               >
                 <Typewriter
                   text={"Our Team"}

@@ -43,7 +43,7 @@ export default function Offer() {
   return (
     <section className="flex items-center flex-col justify-between bg-[#cdbbbd]">
       <div className="flex flex-col items-center justify-center mt-20 mb-15 px-4 text-center">
-        <h2 className={pageTitle("4xl")}>
+        <h2 className={pageTitle("6xl")}>
           What We Offer
         </h2>
         <p className="text-md mt-1 max-w-xl text-[#3d2d2f]">Experience the perfect blend of comfort, quality, and taste</p>
