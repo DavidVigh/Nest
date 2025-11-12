@@ -39,7 +39,7 @@ export default function NavBar() {
     ];
 
     return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#22191A]/75 backdrop-blur-sm p-4">
+    <nav className="sticky top-0 left-0 right-0 z-50 bg-[#22191A]/75 backdrop-blur-sm p-4">
             <div className="flex items-center">
                 <div className="flex-none">
                     <Link href="/">

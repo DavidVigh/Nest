@@ -58,7 +58,7 @@ const cards: ContactCardProps[] = [
 
 export default function ContactPage() {
   return (
-    <main className=" bg-[#cdbbbd] min-h-screen">
+    <main className="min-h-screen">
       <article className="mx-auto pt-20 flex flex-col items-center justify-center">
         <section className="flex flex-col mt-10 items-center justify-center ">
           <h1 className={pageTitle("6xl")}>Contact Us</h1>
@@ -77,7 +77,7 @@ export default function ContactPage() {
         </section>
 
         <section
-          className="mb-20 flex flex-col items-center justify-center
+          className="flex flex-col items-center justify-center
           bg-[#f6e9e3] border rounded-2xl
          border-[#cdbbbd]
           container p-10"

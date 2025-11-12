@@ -96,7 +96,7 @@ function TeamSection() {
 
 export default function About() {
   return (
-    <main className="bg-[#cdbbbd]">
+    <main className="">
       <div className="mx-auto flex flex-col items-center justify-center">
         <div className="min-h-screen flex items-center">
           <HeroSection />

@@ -41,7 +41,7 @@ const offers = [
 
 export default function Offer() {
   return (
-    <section className="flex items-center flex-col justify-between bg-[#cdbbbd]">
+    <section className="flex items-center flex-col justify-between">
       <div className="flex flex-col items-center justify-center mt-20 mb-15 px-4 text-center">
         <h2 className={pageTitle("6xl")}>
           What We Offer
