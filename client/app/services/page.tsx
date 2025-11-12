@@ -80,14 +80,15 @@ export default function Services() {
                 {
                     serviceCards.map((card, i) => {
                         return (
-                            <motion.div
+                            <motion.a
                                 key={i}
                                 variants={CardAnimation}
                                 whileHover="hover"
+                                href={`services/${card.tag}`}
                                 className="w-sm bg-linear-to-tl from-[#f6e9e3] to-[#faddc8] rounded-2xl shadow-lg p-8 cursor-pointer"
                             >
                                 <ServiceCard {...card} />
-                            </motion.div>
+                            </motion.a>
                         );
                     })
                 }
