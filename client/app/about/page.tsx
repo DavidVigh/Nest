@@ -51,8 +51,8 @@ function TeamSection() {
 
   return (
     <section className={`${SECTION_GRADIENT} mt-8 flex flex-col-reverse md:flex-row md:justify-between lg:justify-evenly items-center p-6 mb-20`}>
-      <motion.div className="mt-6 md:mt-0 md:ml-6 text-[#3d2d2f] w-full md:w-2/3 lg:w-1/3 p-4">
-        <div className="flex items-center justify-between sm:justify-start">
+      <motion.div className="mt-6 md:mt-0 md:ml-6 text-[#3d2d2f] w-full md:w-2/3 lg:w-2/5 p-4">
+        <div className="flex items-center justify-between sm:justify-start gap-4">
           <motion.h3
             ref={headingRef}
             className={`${pageTitle("6xl")} ${pageTitle("6xl", "md")}`}
