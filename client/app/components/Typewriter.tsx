@@ -40,8 +40,13 @@ export default function Typewriter({ text, speed = 100, start = true, className 
   return (
     <span className={className} aria-live="polite">
       {display}
-      <span className={cursorClassName} aria-hidden>
-        {showCursor ? "|" : "\u00A0"}
+      {/* keep the cursor character constant so its width doesn't 2; blink by toggling opacity */}
+      <span
+        className={cursorClassName}
+        aria-hidden
+        style={{ opacity: showCursor ? 1 : 0 }}
+      >
+        |
       </span>
     </span>
   );
