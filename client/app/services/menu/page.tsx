@@ -1,4 +1,5 @@
 'use client';
+import { cardBg } from "@/app/tailwind/variables";
 import { MenuCategory, MenuItem } from "@/app/types";
 import { useState, useEffect, use } from "react";
 
@@ -58,7 +59,7 @@ export default function MenuPage() {
             </header>
 
 
-            <article>
+            <article className="h-[75vh] w-full px-4 py-8">
                 <nav>
                     <ul className="flex space-x-4 justify-center my-8">
                         <li>
@@ -97,12 +98,12 @@ export default function MenuPage() {
                         menuItems
                             .filter(item => (activeMenuCategory ? item.category === activeMenuCategory : true))
                             .map(item => (
-                                <div key={item.id} id={`menu-item-${item.id}`} className="bg-red-500 p-8 rounded-xl w-xs flex flex-col justify-between">
+                                <div key={item.id} id={`menu-item-${item.id}`} className={`${cardBg} p-8 rounded-xl w-xs flex flex-col justify-between`}>
                                     <div className="flex flex-row justify-between mb-2">
-                                        <h3 className="text-xl font-semibold w-2/3">{item.name}</h3>
-                                        <p className="text-lg font-semibold self-center">${item.price.toFixed(2)}</p>
+                                        <h3 className="text-2xl font-semibold text-[#22191a] w-2/3">{item.name}</h3>
+                                        <p className="text-2xl text-[#9f5f37] font-semibold self-center">${item.price.toFixed(2)}</p>
                                     </div>
-                                    <p className="text-sm text-gray-600">{item.description}</p>
+                                    <p className="text-md text-[#523c3e]">{item.description}</p>
                                     <div id="allergens">
                                         {
                                             item.tags.length > 0 ? (
