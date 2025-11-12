@@ -207,7 +207,7 @@ export default function MenuPage() {
             </li>
           </ul>
         </nav>
-        <section className="container mx-auto flex justify-center gap-4 flex-wrap">
+        <section className="container mx-auto flex justify-center gap-8 flex-wrap">
           {/* Render filtered items based on active menu category (defaults to first category when loaded) */}
           {menuItems
             .filter((item) =>
@@ -220,6 +220,7 @@ export default function MenuPage() {
                 variants={CardAnimation}
                 initial="initial"
                 whileInView="animate"
+                whileHover="hover"
                 viewport={{
                   once: true,
                 }}
